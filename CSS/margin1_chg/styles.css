@@ -5,11 +5,14 @@ img {
     cookie widget example?
     */
     display: block;
+    margin-left:500px;
     width: 300px;
 }
 
 
 input {
     display: block;
+    margin-top: 100px;
     width: 400px;
+
 }
