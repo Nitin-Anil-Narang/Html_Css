@@ -7,8 +7,10 @@ body {
 }
 
 .card {
+    
     padding: 20px;
     display: flex;
+    justify-content: space-evenly;
     /*
     Challenge:
     Add horizontal space around the flex children.
@@ -17,6 +19,9 @@ body {
 }
 
 .border-blue {
-    border: 1px dotted blue;
+    border: 1px solid blue ;
 }
 
+.content{
+    margin-left: 20px;
+}
