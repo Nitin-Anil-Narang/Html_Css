@@ -1,0 +1,32 @@
+
+.parent{
+    display: block;
+    background-color: hsla(200, 100%, 20%);
+    height: 400px;
+    width: 400px;
+    transition: transform 1s ;
+}
+
+.child{
+    position: sticky;
+    background-color: red;
+    height: 50%;
+    width: 50%;   
+}
+
+/* .parent:hover .child{
+    background-color: green;
+    transform: translateX(100%);
+} */
+
+.grandP{
+    background-color: black;
+    height: 800px;
+    width: 800px;
+    position: absolute;
+
+
+}
+.parent:hover {
+    transform: translateX(500px);
+}
