@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+.parent{
+    width: 400px;
+    height: 400px;
+    background-color: red;
+    display: flex;
+    transform: translate(50%,50%);
+}
+
+.child{
+    width: 50%;
+    height: 50%;
+    background-color: blue;
+    transition: transform 2s ease-in-out;
+}
+
+.parent:hover .child{
+    transform: translateX(100%);
+}
+

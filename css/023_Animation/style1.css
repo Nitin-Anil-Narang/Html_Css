@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+.parent{
+    width: 400px;
+    height: 400px;
+    background-color: red;
+    display: flex;
+    transform: translate(50%,50%);
+}
+
+.child{
+    width: 50%;
+    height: 50%;
+    background-color: blue;
+}
+
+.parent:hover .child{
+    animation: first-anim 2s ease-in forwards 5 ;
+    
+}
+
+@keyframes first-anim {
+    50%{background-color: green;}
+    100%{transform: translateX(100%);}
+}
