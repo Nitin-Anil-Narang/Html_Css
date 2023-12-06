@@ -14,10 +14,28 @@
     width: 50%;
     height: 50%;
     background-color: blue;
-    transition: transform 2s ease-in-out;
+    /* transition: transform 2s ease-in-out; */
 }
 
 .parent:hover .child{
-    transform: translateX(100%);
-}
+    animation: first-anim 2s ease-in ;
+    animation-fill-mode: backwards;
+    animation-iteration-count: 1;
+    /* transform: translateX(100%); */
+} 
 
+
+@keyframes first-anim {
+    0%{
+
+    }
+    33%{
+        transform: translateY(-100%);
+    }
+    66%{
+        transform: translateX(-100%) translateY(-100%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
