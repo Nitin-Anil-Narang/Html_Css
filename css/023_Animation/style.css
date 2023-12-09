@@ -18,8 +18,8 @@
 }
 
 .parent:hover .child{
-    animation: first-anim 2s ease-in ;
-    animation-fill-mode: backwards;
+    animation: first-anim 5s ease-in ;
+    animation-fill-mode: forwards;
     animation-iteration-count: 1;
     /* transform: translateX(100%); */
 } 
@@ -27,13 +27,13 @@
 
 @keyframes first-anim {
     0%{
-
+        transform: rotate(40deg);
     }
     33%{
-        transform: translateY(-100%);
+        transform: translateY(100%) rotate(-50deg);
     }
     66%{
-        transform: translateX(-100%) translateY(-100%);
+        transform: translateX(100%) translateY(100%);
     }
     100%{
         transform: translateX(-100%);
