@@ -7,6 +7,41 @@ function half(x) {
 function add(x, y) {
     return x + y;
 }
+/mutliply function as practice/
+function multi(x,y){
+    return x*y;
+}
+function yell(x) {
+    return x.toUpperCase();
+}
+function longerThan(x,y) {
+    if (x.length > y.length) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+let a1 = "Niti"
+let a2 = [1,2,3];
+
+
+const divide= (x,y) => {
+    return x/y;
+
+}
+
+const whisper= (x) => {
+    return x.toLowerCase();
+
+};
+
+console.log(whisper("NITIN"));
+console.log (divide(9,3))
+
+console.log(longerThan(a1,a2));
+console.log(multi(4,2));
+console.log(yell("nandu"));
 console.log(add(2,3));
 
 function getRandomNumber() {
@@ -21,7 +56,7 @@ function add3(x, y, z) {
     console.log("I received the arguments", x, y, z);
     return x + y + z;
 }
-const sum = add3(1,2);
+const sum = add3(1,2,3);
 
 function doesThisWork(weirdVariable) {
     console.log(weirdVariable);
@@ -36,16 +71,16 @@ function square(x) {
 const nine = square(3);
 
 function sayHello(name) {
-    console.log("Oh hi, " + name + "!");
+    return console.log("Oh hi, " + name + "!");
     
 }
 sayHello("Marc");
 
 const hm = sayHello("Marc");
 
-const add = (x, y) => x + y;
+const add2 = (x, y) => x + y;
 
-console.log(add(5,2));
+console.log(add2(6,8));
 
 console.log(hm);
 
@@ -54,3 +89,5 @@ console.log(nine);
 console.log(sum);
 console.log(one);
 console.table(list);
+
+console.log("Nitin");
