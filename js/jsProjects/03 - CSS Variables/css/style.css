@@ -1,16 +1,31 @@
-:root{
+/* :root{
     --base:#ffc600;
     --spacing:10px;
     --blur:10px;
-}
-img{
+} */
+/* img{
     padding: var(--spacing);
     background: var(--base);
     filter: blur(var(--blur));
+} */
+
+/* .hl{
+    color: var(--base);
+} */
+
+:root{
+    --spacing: 10px;
+    --blur: 0px;
+    --base:"red";
 }
 
+img{
+    background-color: var(--base);
+    padding: var(--spacing);
+    filter: blur(var(--blur));
+}
 .hl{
-    color: var(--base);
+   color: var(--base); 
 }
 
 body 

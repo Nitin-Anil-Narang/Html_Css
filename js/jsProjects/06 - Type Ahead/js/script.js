@@ -8,6 +8,9 @@ fetch(endpoint)
     .then(data => cities.push(...data));
 
 
+function numberWithCommas(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
 
 function findmatches(wordTomatch,city){
 
@@ -23,14 +26,17 @@ function displayMatches(){
     const tomatch = findmatches(this.value,cities);
     console.log(tomatch);
 
-    `<hl><hl>`
+    
 
     const html = tomatch.map(place =>{
         const regex = new RegExp(this.value,'gi');
+        const hLcity = place.city.replace(regex,`<span class="hl">${this.value}</span>`);
+        const hLstate = place.state.replace(regex,`<span class="hl">${this.value}</span>`);
+        console.log(this.value);
         return `
         <li>
-            <span className="name">${place.city},${place.state}</span>
-            <span className="population">${place.population}</span>
+            <span className="name">${hLcity},${hLstate}</span>
+            <span className="population">${numberWithCommas(place.population)}</span>
             
         </li>
         `
